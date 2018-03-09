@@ -123,8 +123,8 @@ ws2811_return_t ws2811_render(ws2811_t *ws2811);                       //< Send 
 ws2811_return_t ws2811_wait(ws2811_t *ws2811);                         //< Wait for DMA completion
 const char * ws2811_get_return_t_str(const ws2811_return_t state);     //< Get string representation of the given return state
 ws2811_t generate_ws2811_t_object(uint32_t freq, int dmanum,           //< Convienince method to construct a ws2811_t object (for C++ mostly)
-    int ch0_gpionum, bool ch0_invert, int ch0_count, int ch0_strip_type, int ch0_brightness,
-    int ch1_gpionum, bool ch1_invert, int ch1_count, int ch1_strip_type, int ch1_brightness);
+    int ch0_gpionum, int ch0_invert, int ch0_count, int ch0_strip_type, int ch0_brightness,
+    int ch1_gpionum, int ch1_invert, int ch1_count, int ch1_strip_type, int ch1_brightness);
 
 #ifdef __cplusplus
 }
