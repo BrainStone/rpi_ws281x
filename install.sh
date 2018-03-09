@@ -6,5 +6,5 @@ echo "Compiling..."
 scons
 
 echo "Installing to /usr/local"
-cp *.h /usr/local/include
-cp *.a /usr/local/lib
+cp -vf *.h /usr/local/include
+cp -vf *.a /usr/local/lib
